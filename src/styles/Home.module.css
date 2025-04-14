@@ -1,0 +1,64 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #0f0f0f;
+    color: #f5ebd0;
+    position: relative;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .title {
+    font-family: "Lobster", cursive;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #f5ebd0;
+  }
+  
+  .mascot {
+    width: 180px;
+    max-width: 80%;
+    margin-bottom: 2rem;
+    transition: transform 0.3s ease;
+  }
+  .mascot:hover {
+    transform: scale(1.05);
+  }
+  
+  .button {
+    background-color: #f5ebd0;
+    color: #0f0f0f;
+    padding: 1rem 2rem;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  .button:hover {
+    background-color: #e0d4b7;
+    transform: scale(1.05);
+  }
+  
+  .settingsLeft, .settingsRight {
+    position: absolute;
+    top: 1rem;
+    color: #f5ebd0;
+  }
+  .settingsLeft {
+    left: 1rem;
+  }
+  .settingsRight {
+    right: 1rem;
+  }
+  
+  .footer {
+    margin-top: auto;
+    font-size: 0.8rem;
+    color: #aaa;
+    padding: 1rem 0;
+  }
+  
