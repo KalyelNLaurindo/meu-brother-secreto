@@ -1,6 +1,6 @@
 import { useState } from "react";
 import styles from "../styles/ConfigPage.module.css";
-import brFlag from "../assets/images/CardVerQuemPegou.png"; // substitua se for outro
+import brFlag from "../assets/images/CardVerQuemPegou.png";
 import { Icon } from "@iconify/react";
 
 function ConfigPage() {
@@ -8,7 +8,7 @@ function ConfigPage() {
 
   const toggleMode = () => {
     setDarkMode(!darkMode);
-    // aqui você pode salvar no localStorage ou atualizar um context
+    
   };
 
   return (

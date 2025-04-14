@@ -1,64 +1,82 @@
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    background-color: #0f0f0f;
-    color: #f5ebd0;
-    position: relative;
-    padding: 1rem;
-    text-align: center;
-  }
-  
-  .title {
-    font-family: "Lobster", cursive;
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-    color: #f5ebd0;
-  }
-  
-  .mascot {
-    width: 180px;
-    max-width: 80%;
-    margin-bottom: 2rem;
-    transition: transform 0.3s ease;
-  }
-  .mascot:hover {
-    transform: scale(1.05);
-  }
-  
-  .button {
-    background-color: #f5ebd0;
-    color: #0f0f0f;
-    padding: 1rem 2rem;
-    border-radius: 12px;
-    font-weight: bold;
-    font-size: 1.1rem;
-    text-decoration: none;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-  }
-  .button:hover {
-    background-color: #e0d4b7;
-    transform: scale(1.05);
-  }
-  
-  .settingsLeft, .settingsRight {
-    position: absolute;
-    top: 1rem;
-    color: #f5ebd0;
-  }
-  .settingsLeft {
-    left: 1rem;
-  }
-  .settingsRight {
-    right: 1rem;
-  }
-  
-  .footer {
-    margin-top: auto;
-    font-size: 0.8rem;
-    color: #aaa;
-    padding: 1rem 0;
-  }
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100dvh; 
+  padding: 2rem 1rem;
+  background-color: #0f0f0f;
+  color: #f5ebd0;
+  text-align: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+  background-color: #1b1b1b;
+  padding: 2rem; 
+  border-radius: 16px;
+  box-shadow: 0 0 0 2px #ff1a1a33, 0 0 25px #ff1a1a55; 
+  max-width: 420px;
+  width: 100%;
+  gap: 1.5rem;
+  position: relative;
+}
+
+.title {
+  font-family: sans-serif;
+  font-size: 2.3rem;
+  color: #f5ebd0;
+  margin-top: 1rem;
+}
+
+.textSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.mascot {
+  width: 180px;
+  max-width: 80%;
+  transition: transform 0.3s ease;
+}
+
+.mascot:hover {
+  transform: scale(1.05);
+}
+
+.button {
+  background-color: #f5ebd0;
+  color: #0f0f0f;
+  padding: 0.9rem 2rem;
+  border-radius: 12px;
+  font-weight: bold;
+  font-size: 1.05rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 2rem; 
+}
+
+.button:hover {
+  background-color: #ff1a1a; 
+  color: #fff; 
+  transform: scale(1.05);
+}
+
+.settings {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  color: #f5ebd0;
+}
+
+.footer {
+  font-size: 0.8rem;
+  color: #aaa;
+  margin-top: 2rem;
+}
